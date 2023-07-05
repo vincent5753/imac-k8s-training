@@ -1,0 +1,3 @@
+kubectl apply -f ipaddresspool.yaml
+kubectl apply -f l2advertisement.yaml
+for i in {1..5}; do curl http://${yourLBip}; done

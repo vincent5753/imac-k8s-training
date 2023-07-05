@@ -17,3 +17,5 @@ kubectl apply -f - -n kube-system
 
 echo "Apply MetalLB YAML"
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.10/config/manifests/metallb-native.yaml
+echo "MBL 相關資源"
+kubectl get all --namespace metallb-system
